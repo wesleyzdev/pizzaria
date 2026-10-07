@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Gradiente da Marca Forno & Brasa -->
+    <linearGradient id="flameGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFC107" />
+      <stop offset="35%" stop-color="#FF7043" />
+      <stop offset="70%" stop-color="#FF5722" />
+      <stop offset="100%" stop-color="#E53935" />
+    </linearGradient>
+
+    <!-- Gradiente da Borda -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5722" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#E53935" stop-opacity="0.25" />
+    </linearGradient>
+
+    <!-- Glow de Brasa no Fundo -->
+    <radialGradient id="bgGlow" cx="50%" cy="55%" r="55%">
+      <stop offset="0%" stop-color="#FF5722" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0D0D0D" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Sombra/Glow da Chama -->
+    <filter id="flameShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#FF5722" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Fundo Squircle Dark Premium -->
+  <rect x="8" y="8" width="496" height="496" rx="120" fill="#141414" stroke="url(#borderGrad)" stroke-width="16" />
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#bgGlow)" />
+
+  <!-- Ícone da Chama Curva Forno & Brasa -->
+  <g transform="translate(125.44, 82) scale(0.68)" filter="url(#flameShadow)">
+    <path fill="url(#flameGrad)" d="M153.6 29.9l16-21.3C173.6 3.2 180 0 186.7 0C198.4 0 208 9.6 208 21.3V43.5c0 13.1 5.4 25.7 14.9 34.7L307.6 159C356.4 205.6 384 270.2 384 337.7C384 434 306 512 209.7 512H192C86 512 0 426 0 320v-3.8c0-48.8 19.4-95.6 53.9-130.1l3.5-3.5c4.2-4.2 10-6.6 16-6.6C85.9 176 96 186.1 96 198.6V288c0 35.3 28.7 64 64 64s64-28.7 64-64v-3.9c0-18-7.2-35.3-19.9-48l-38.6-38.6c-24-24-37.5-56.7-37.5-90.7c0-27.7 9-54.8 25.6-76.9z"/>
+  </g>
+</svg>

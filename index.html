@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pizzaria artesanal com massa de fermentação natural, ingredientes frescos e entrega rápida. Peça agora pelo WhatsApp!">
+    <meta name="theme-color" content="#1A1A1A">
+    <title>Forno & Brasa — Pizzaria Artesanal | Peça pelo WhatsApp</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="shortcut icon" href="assets/images/favicon.svg">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ======================== HEADER / NAV ======================== -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#" class="header__logo" id="logo">
+                <span class="logo__icon"><i class="fa-solid fa-fire-flame-curved"></i></span>
+                <span class="logo__text">Forno<span class="logo__ampersand">&</span>Brasa</span>
+            </a>
+
+            <nav class="header__nav" id="nav" aria-label="Navegação principal">
+                <ul class="nav__list">
+                    <li><a href="#hero" class="nav__link nav__link--active">Início</a></li>
+                    <li><a href="#menu" class="nav__link">Cardápio</a></li>
+                    <li><a href="#about" class="nav__link">Sobre Nós</a></li>
+                    <li><a href="#testimonials" class="nav__link">Avaliações</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions-group">
+                <button class="cart-trigger-btn" id="cart-trigger" aria-label="Abrir carrinho de compras">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-trigger-btn__badge" id="cart-count">0</span>
+                </button>
+                <a href="#menu" class="btn btn--primary header__cta" id="header-cta">Pedir Agora</a>
+                <button class="header__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ======================== HERO SECTION ======================== -->
+        <section class="hero" id="hero">
+            <div class="hero__bg-shapes">
+                <div class="hero__circle hero__circle--1"></div>
+                <div class="hero__circle hero__circle--2"></div>
+                <div class="hero__circle hero__circle--3"></div>
+            </div>
+
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <span class="hero__badge"><i class="fa-solid fa-fire-flame-curved"></i> Pizzaria Artesanal</span>
+                    <h1 class="hero__title">
+                        Uma <span class="text-gradient">Explosão de Sabor</span> a Cada Pedaço.
+                    </h1>
+                    <p class="hero__subtitle">
+                        Esqueça o básico. Ingredientes frescos, massa de fermentação natural e entrega na velocidade da sua fome.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#menu" class="btn btn--primary btn--lg" id="hero-cta-menu">
+                            <span>Ver Cardápio</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn btn--outline btn--lg" id="hero-cta-about">Conheça Nossa História</a>
+                    </div>
+
+                    <div class="hero__stats">
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">4.9</span>
+                            <span class="hero__stat-label"><i class="fa-solid fa-star"></i> Avaliação</span>
+                        </div>
+                        <div class="hero__stat-divider"></div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">2k+</span>
+                            <span class="hero__stat-label"><i class="fa-solid fa-receipt"></i> Pedidos/mês</span>
+                        </div>
+                        <div class="hero__stat-divider"></div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">30min</span>
+                            <span class="hero__stat-label"><i class="fa-solid fa-person-biking"></i> Entrega média</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__image-wrapper">
+                    <div class="hero__image-ring"></div>
+                    <img src="assets/images/pizza_margherita.jpg" alt="Pizza Margherita artesanal com mussarela de búfala e manjericão fresco" class="hero__image" id="hero-image" loading="eager">
+                    <div class="hero__float-card hero__float-card--rating">
+                        <span class="float-card__icon"><i class="fa-solid fa-star"></i></span>
+                        <div>
+                            <strong>5.0</strong>
+                            <small>128 avaliações</small>
+                        </div>
+                    </div>
+                    <div class="hero__float-card hero__float-card--delivery">
+                        <span class="float-card__icon"><i class="fa-solid fa-person-biking"></i></span>
+                        <div>
+                            <strong>Entrega Grátis</strong>
+                            <small>Pedidos acima de R$60</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== MENU / CARDÁPIO ======================== -->
+        <section class="menu" id="menu">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__tag">Nosso Cardápio</span>
+                    <h2 class="section-header__title">Sabores que <span class="text-gradient">Conquistam</span></h2>
+                    <p class="section-header__desc">Cada pizza é preparada artesanalmente no nosso forno a lenha, com ingredientes selecionados e massa de fermentação natural de 72 horas.</p>
+                </div>
+
+                <div class="menu__filter" id="menu-filter">
+                    <button class="menu__filter-btn menu__filter-btn--active" data-filter="all">Todas</button>
+                    <button class="menu__filter-btn" data-filter="classicas">Clássicas</button>
+                    <button class="menu__filter-btn" data-filter="especiais">Especiais</button>
+                    <button class="menu__filter-btn" data-filter="premium">Premium</button>
+                </div>
+
+                <div class="menu__grid" id="menu-grid">
+                    <!-- Card 1 - Margherita -->
+                    <article class="pizza-card" data-category="classicas" id="card-margherita">
+                        <div class="pizza-card__badge"><i class="fa-solid fa-star"></i> Mais Vendida</div>
+                        <div class="pizza-card__image-wrapper">
+                            <img src="assets/images/pizza_margherita.jpg" alt="Pizza Margherita Suprema" class="pizza-card__image" loading="lazy">
+                        </div>
+                        <div class="pizza-card__content">
+                            <div class="pizza-card__header">
+                                <h3 class="pizza-card__name">Margherita Suprema</h3>
+                                <span class="pizza-card__rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                            </div>
+                            <p class="pizza-card__desc">Molho de tomate San Marzano, mussarela de búfala, manjericão fresco e azeite extra virgem.</p>
+                            <div class="pizza-card__footer">
+                                <div class="pizza-card__price">
+                                    <span class="pizza-card__price-currency">R$</span>
+                                    <span class="pizza-card__price-value">42,90</span>
+                                </div>
+                                <button class="btn btn--primary btn--sm pizza-card__btn"
+                                        data-pizza-id="margherita"
+                                        data-pizza-name="Margherita Suprema"
+                                        data-pizza-price="42.90"
+                                        data-pizza-desc="Molho de tomate San Marzano, mussarela de búfala, manjericão fresco e azeite extra virgem."
+                                        data-pizza-image="assets/images/pizza_margherita.jpg"
+                                        data-pizza-badge="Mais Vendida"
+                                        id="btn-margherita">
+                                    Pedir
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 - Pepperoni -->
+                    <article class="pizza-card" data-category="classicas" id="card-pepperoni">
+                        <div class="pizza-card__badge pizza-card__badge--fire"><i class="fa-solid fa-fire"></i> Picante</div>
+                        <div class="pizza-card__image-wrapper">
+                            <img src="assets/images/pizza_pepperoni.jpg" alt="Pizza Pepperoni Clássica" class="pizza-card__image" loading="lazy">
+                        </div>
+                        <div class="pizza-card__content">
+                            <div class="pizza-card__header">
+                                <h3 class="pizza-card__name">Pepperoni Clássica</h3>
+                                <span class="pizza-card__rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                            </div>
+                            <p class="pizza-card__desc">Generosas fatias de pepperoni artesanal, mussarela dourada e molho de tomate especial.</p>
+                            <div class="pizza-card__footer">
+                                <div class="pizza-card__price">
+                                    <span class="pizza-card__price-currency">R$</span>
+                                    <span class="pizza-card__price-value">45,90</span>
+                                </div>
+                                <button class="btn btn--primary btn--sm pizza-card__btn"
+                                        data-pizza-id="pepperoni"
+                                        data-pizza-name="Pepperoni Clássica"
+                                        data-pizza-price="45.90"
+                                        data-pizza-desc="Generosas fatias de pepperoni artesanal, mussarela dourada e molho de tomate especial."
+                                        data-pizza-image="assets/images/pizza_pepperoni.jpg"
+                                        data-pizza-badge="Picante"
+                                        id="btn-pepperoni">
+                                    Pedir
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 - Quatro Queijos -->
+                    <article class="pizza-card" data-category="especiais" id="card-quatro-queijos">
+                        <div class="pizza-card__badge"><i class="fa-solid fa-cheese"></i> Favorita</div>
+                        <div class="pizza-card__image-wrapper">
+                            <img src="assets/images/pizza_quatro_queijos.jpg" alt="Pizza Quatro Queijos" class="pizza-card__image" loading="lazy">
+                        </div>
+                        <div class="pizza-card__content">
+                            <div class="pizza-card__header">
+                                <h3 class="pizza-card__name">Quatro Queijos</h3>
+                                <span class="pizza-card__rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                            </div>
+                            <p class="pizza-card__desc">Mussarela, gorgonzola, parmesão e catupiry. Uma explosão de queijos em cada fatia.</p>
+                            <div class="pizza-card__footer">
+                                <div class="pizza-card__price">
+                                    <span class="pizza-card__price-currency">R$</span>
+                                    <span class="pizza-card__price-value">49,90</span>
+                                </div>
+                                <button class="btn btn--primary btn--sm pizza-card__btn"
+                                        data-pizza-id="quatro-queijos"
+                                        data-pizza-name="Quatro Queijos"
+                                        data-pizza-price="49.90"
+                                        data-pizza-desc="Mussarela, gorgonzola, parmesão e catupiry. Uma explosão de queijos em cada fatia."
+                                        data-pizza-image="assets/images/pizza_quatro_queijos.jpg"
+                                        data-pizza-badge="Favorita"
+                                        id="btn-quatro-queijos">
+                                    Pedir
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 - Calabresa -->
+                    <article class="pizza-card" data-category="classicas" id="card-calabresa">
+                        <div class="pizza-card__badge"><i class="fa-solid fa-pizza-slice"></i> Tradicional</div>
+                        <div class="pizza-card__image-wrapper">
+                            <img src="assets/images/pizza_calabresa.jpg" alt="Pizza Calabresa Especial" class="pizza-card__image" loading="lazy">
+                        </div>
+                        <div class="pizza-card__content">
+                            <div class="pizza-card__header">
+                                <h3 class="pizza-card__name">Calabresa Especial</h3>
+                                <span class="pizza-card__rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                            </div>
+                            <p class="pizza-card__desc">Calabresa artesanal fatiada, cebola caramelizada, azeitonas pretas e orégano fresco.</p>
+                            <div class="pizza-card__footer">
+                                <div class="pizza-card__price">
+                                    <span class="pizza-card__price-currency">R$</span>
+                                    <span class="pizza-card__price-value">39,90</span>
+                                </div>
+                                <button class="btn btn--primary btn--sm pizza-card__btn"
+                                        data-pizza-id="calabresa"
+                                        data-pizza-name="Calabresa Especial"
+                                        data-pizza-price="39.90"
+                                        data-pizza-desc="Calabresa artesanal fatiada, cebola caramelizada, azeitonas pretas e orégano fresco."
+                                        data-pizza-image="assets/images/pizza_calabresa.jpg"
+                                        data-pizza-badge="Tradicional"
+                                        id="btn-calabresa">
+                                    Pedir
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5 - Portuguesa -->
+                    <article class="pizza-card" data-category="especiais" id="card-portuguesa">
+                        <div class="pizza-card__badge"><i class="fa-solid fa-award"></i> Clássico</div>
+                        <div class="pizza-card__image-wrapper">
+                            <img src="assets/images/pizza_portuguesa.jpg" alt="Pizza Portuguesa Premium" class="pizza-card__image" loading="lazy">
+                        </div>
+                        <div class="pizza-card__content">
+                            <div class="pizza-card__header">
+                                <h3 class="pizza-card__name">Portuguesa Premium</h3>
+                                <span class="pizza-card__rating"><i class="fa-solid fa-star"></i> 4.6</span>
+                            </div>
+                            <p class="pizza-card__desc">Presunto, ovos, cebola, azeitonas verdes, ervilha e mussarela derretida no forno a lenha.</p>
+                            <div class="pizza-card__footer">
+                                <div class="pizza-card__price">
+                                    <span class="pizza-card__price-currency">R$</span>
+                                    <span class="pizza-card__price-value">44,90</span>
+                                </div>
+                                <button class="btn btn--primary btn--sm pizza-card__btn"
+                                        data-pizza-id="portuguesa"
+                                        data-pizza-name="Portuguesa Premium"
+                                        data-pizza-price="44.90"
+                                        data-pizza-desc="Presunto, ovos, cebola, azeitonas verdes, ervilha e mussarela derretida no forno a lenha."
+                                        data-pizza-image="assets/images/pizza_portuguesa.jpg"
+                                        data-pizza-badge="Clássico"
+                                        id="btn-portuguesa">
+                                    Pedir
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 6 - Frango c/ Catupiry -->
+                    <article class="pizza-card" data-category="premium" id="card-frango-catupiry">
+                        <div class="pizza-card__badge pizza-card__badge--new"><i class="fa-solid fa-wand-magic-sparkles"></i> Novidade</div>
+                        <div class="pizza-card__image-wrapper">
+                            <img src="assets/images/pizza_frango_catupiry.jpg" alt="Pizza Frango com Catupiry" class="pizza-card__image" loading="lazy">
+                        </div>
+                        <div class="pizza-card__content">
+                            <div class="pizza-card__header">
+                                <h3 class="pizza-card__name">Frango c/ Catupiry</h3>
+                                <span class="pizza-card__rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                            </div>
+                            <p class="pizza-card__desc">Frango desfiado temperado, catupiry cremoso, milho e um toque de orégano fresco.</p>
+                            <div class="pizza-card__footer">
+                                <div class="pizza-card__price">
+                                    <span class="pizza-card__price-currency">R$</span>
+                                    <span class="pizza-card__price-value">46,90</span>
+                                </div>
+                                <button class="btn btn--primary btn--sm pizza-card__btn"
+                                        data-pizza-id="frango-catupiry"
+                                        data-pizza-name="Frango c/ Catupiry"
+                                        data-pizza-price="46.90"
+                                        data-pizza-desc="Frango desfiado temperado, catupiry cremoso, milho e um toque de orégano fresco."
+                                        data-pizza-image="assets/images/pizza_frango_catupiry.jpg"
+                                        data-pizza-badge="Novidade"
+                                        id="btn-frango-catupiry">
+                                    Pedir
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== ABOUT SECTION ======================== -->
+        <section class="about" id="about">
+            <div class="container about__inner">
+                <div class="about__images">
+                    <div class="about__image-card about__image-card--1">
+                        <img src="assets/images/pizza_pepperoni.jpg" alt="Forno a lenha da pizzaria" class="about__image" loading="lazy">
+                    </div>
+                    <div class="about__image-card about__image-card--2">
+                        <img src="assets/images/pizza_quatro_queijos.jpg" alt="Pizza saindo do forno" class="about__image" loading="lazy">
+                    </div>
+                    <div class="about__experience-badge">
+                        <span class="about__experience-number">12</span>
+                        <span class="about__experience-text">Anos de<br>Tradição</span>
+                    </div>
+                    <div class="about__images-glow"></div>
+                </div>
+
+                <div class="about__content">
+                    <span class="section-header__tag">Nossa História</span>
+                    <h2 class="about__title">Criando <span class="text-gradient">Memórias Saborosas</span></h2>
+                    <p class="about__text">
+                        Desde 2012, a Forno & Brasa nasceu do sonho de trazer a autêntica pizza italiana para a sua mesa. Nosso forno a lenha atinge 450°C, garantindo aquela borda crocante e o sabor defumado que só a madeira de lei proporciona.
+                    </p>
+                    <p class="about__text">
+                        Cada ingrediente é selecionado com rigor: mussarela de búfala de produtores locais, tomates San Marzano importados e uma massa de fermentação lenta de 72 horas que é a nossa assinatura.
+                    </p>
+
+                    <div class="about__features">
+                        <div class="about__feature" id="feature-natural">
+                            <span class="about__feature-icon"><i class="fa-solid fa-leaf"></i></span>
+                            <div>
+                                <strong>100% Natural</strong>
+                                <p>Sem conservantes artificiais</p>
+                            </div>
+                        </div>
+                        <div class="about__feature" id="feature-forno">
+                            <span class="about__feature-icon"><i class="fa-solid fa-fire-burner"></i></span>
+                            <div>
+                                <strong>Forno a Lenha</strong>
+                                <p>Autêntico sabor defumado</p>
+                            </div>
+                        </div>
+                        <div class="about__feature" id="feature-massa">
+                            <span class="about__feature-icon"><i class="fa-regular fa-clock"></i></span>
+                            <div>
+                                <strong>72h de Fermentação</strong>
+                                <p>Massa leve e saborosa</p>
+                            </div>
+                        </div>
+                        <div class="about__feature" id="feature-entrega">
+                            <span class="about__feature-icon"><i class="fa-solid fa-person-biking"></i></span>
+                            <div>
+                                <strong>Entrega Express</strong>
+                                <p>Em até 30 minutos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== TESTIMONIALS ======================== -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__tag">Avaliações</span>
+                    <h2 class="section-header__title">O Que Nossos Clientes <span class="text-gradient">Dizem</span></h2>
+                    <p class="section-header__desc">Mais de 2.000 pedidos por mês e uma nota média de 4.9 estrelas. Confira os depoimentos de quem já provou.</p>
+                </div>
+
+                <div class="testimonials__grid">
+                    <article class="testimonial-card" id="testimonial-1">
+                        <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
+                        <blockquote class="testimonial-card__text">
+                            "Melhor pizza da cidade, sem exagero! A massa é leve, os ingredientes são frescos e chega quentinha. Virei cliente fiel."
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">MO</div>
+                            <div>
+                                <strong class="testimonial-card__name">Marina Oliveira</strong>
+                                <span class="testimonial-card__role">Cliente há 3 anos</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card" id="testimonial-2">
+                        <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
+                        <blockquote class="testimonial-card__text">
+                            "A Quatro Queijos é divina! Pedi pelo WhatsApp e em 25 minutos já estava na minha porta. Atendimento impecável."
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">RS</div>
+                            <div>
+                                <strong class="testimonial-card__name">Rafael Santos</strong>
+                                <span class="testimonial-card__role">Cliente há 1 ano</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card" id="testimonial-3">
+                        <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
+                        <blockquote class="testimonial-card__text">
+                            "Peço toda sexta-feira! A Pepperoni é viciante. Borda recheada + catupiry = combinação perfeita. Recomendo demais!"
+                        </blockquote>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">FC</div>
+                            <div>
+                                <strong class="testimonial-card__name">Fernanda Costa</strong>
+                                <span class="testimonial-card__role">Cliente há 2 anos</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== CTA SECTION ======================== -->
+        <section class="cta" id="cta">
+            <div class="container cta__inner">
+                <div class="cta__content">
+                    <h2 class="cta__title">Pronto para uma <span class="text-gradient">experiência única</span>?</h2>
+                    <p class="cta__text">Faça seu pedido agora pelo WhatsApp e receba em até 30 minutos. Entrega grátis para pedidos acima de R$60!</p>
+                    <a href="https://wa.me/5519998866956?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido." class="btn btn--primary btn--lg cta__btn" id="cta-whatsapp" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Pedir pelo WhatsApp
+                    </a>
+                </div>
+                <div class="cta__decoration">
+                    <span class="cta__deco cta__deco--1"><i class="fa-solid fa-pizza-slice"></i></span>
+                    <span class="cta__deco cta__deco--2"><i class="fa-solid fa-fire-flame-curved"></i></span>
+                    <span class="cta__deco cta__deco--3"><i class="fa-solid fa-cheese"></i></span>
+                    <span class="cta__deco cta__deco--4"><i class="fa-solid fa-circle-nodes"></i></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer class="footer" id="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a href="#" class="header__logo">
+                    <span class="logo__icon"><i class="fa-solid fa-fire-flame-curved"></i></span>
+                    <span class="logo__text">Forno<span class="logo__ampersand">&</span>Brasa</span>
+                </a>
+                <p class="footer__tagline">Pizzaria artesanal com forno a lenha, massa de fermentação natural e ingredientes selecionados desde 2012.</p>
+            </div>
+
+            <div class="footer__links">
+                <h4 class="footer__heading">Navegação</h4>
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#menu">Cardápio</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#testimonials">Avaliações</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__links">
+                <h4 class="footer__heading">Contato</h4>
+                <ul>
+                    <li><i class="fa-solid fa-phone footer__contact-icon"></i> (11) 99999-9999</li>
+                    <li><i class="fa-solid fa-location-dot footer__contact-icon"></i> Rua das Pizzas, 123</li>
+                    <li><i class="fa-regular fa-clock footer__contact-icon"></i> 18h às 23h</li>
+                    <li><i class="fa-regular fa-calendar footer__contact-icon"></i> Ter a Dom</li>
+                </ul>
+            </div>
+
+            <div class="footer__links">
+                <h4 class="footer__heading">Redes Sociais</h4>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Instagram" id="social-instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="footer__social-link" aria-label="Facebook" id="social-facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link" aria-label="TikTok" id="social-tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2024 Forno & Brasa. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons Container -->
+    <div class="floating-actions" id="floating-actions">
+        <!-- Cart Float Trigger -->
+        <button class="cart-float-btn" id="cart-float-btn" aria-label="Abrir carrinho de compras">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-float-btn__badge" id="cart-float-count">0</span>
+        </button>
+
+        <!-- WhatsApp Float Button -->
+        <a href="https://wa.me/5519998866956?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido." class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- ======================== CART DRAWER ======================== -->
+    <div class="cart-backdrop" id="cart-backdrop" aria-hidden="true"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Carrinho de Compras" aria-hidden="true">
+        <div class="cart-drawer__header">
+            <div class="cart-drawer__title-wrap">
+                <span class="cart-drawer__icon"><i class="fa-solid fa-bag-shopping"></i></span>
+                <h3 class="cart-drawer__title">Seu Pedido</h3>
+                <span class="cart-drawer__count" id="cart-drawer-count">(0 itens)</span>
+            </div>
+            <button class="cart-drawer__close" id="cart-close" aria-label="Fechar carrinho">&times;</button>
+        </div>
+
+        <div class="cart-drawer__shipping-bar" id="cart-shipping-bar">
+            <div class="shipping-bar__text" id="shipping-bar-text">Adicione R$ 60,00 para ter frete grátis!</div>
+            <div class="shipping-bar__progress">
+                <div class="shipping-bar__fill" id="shipping-bar-fill" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <div class="cart-drawer__body" id="cart-items-container">
+            <!-- Empty state -->
+            <div class="cart-empty" id="cart-empty-state">
+                <span class="cart-empty__icon"><i class="fa-solid fa-pizza-slice"></i></span>
+                <p class="cart-empty__title">Seu carrinho está vazio</p>
+                <p class="cart-empty__subtitle">Que tal escolher uma de nossas pizzas artesanais no cardápio?</p>
+                <button class="btn btn--primary btn--sm" id="cart-empty-cta">Explorar Cardápio</button>
+            </div>
+            <ul class="cart-items-list" id="cart-items-list" style="display: none;"></ul>
+        </div>
+
+        <div class="cart-drawer__footer" id="cart-footer" style="display: none;">
+            <!-- Customer Delivery Details Form -->
+            <details class="cart-delivery-details" id="cart-delivery-details" open>
+                <summary class="cart-delivery-details__summary">
+                    <span><i class="fa-solid fa-location-dot"></i> Entrega &amp; Pagamento</span>
+                    <span class="cart-delivery-details__arrow">▼</span>
+                </summary>
+                <div class="cart-delivery-details__fields">
+                    <div class="form-group">
+                        <label for="order-name">Seu Nome *</label>
+                        <input type="text" id="order-name" placeholder="Ex: Maria Silva" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group" style="flex: 2;">
+                            <label for="order-address">Rua e Número *</label>
+                            <input type="text" id="order-address" placeholder="Ex: Av. Paulista, 1000, Apto 42" required>
+                        </div>
+                        <div class="form-group" style="flex: 1;">
+                            <label for="order-neighborhood">Bairro *</label>
+                            <input type="text" id="order-neighborhood" placeholder="Ex: Centro" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-payment">Forma de Pagamento *</label>
+                        <select id="order-payment">
+                            <option value="Pix">Pix (Chave enviada no WhatsApp)</option>
+                            <option value="Cartão de Crédito/Débito">Cartão (Máquina levada na entrega)</option>
+                            <option value="Dinheiro">Dinheiro</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="order-change-group" style="display: none;">
+                        <label for="order-change">Troco para quanto?</label>
+                        <input type="text" id="order-change" placeholder="Ex: R$ 100,00">
+                    </div>
+                </div>
+            </details>
+
+            <div class="cart-summary">
+                <div class="cart-summary__row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">R$ 0,00</span>
+                </div>
+                <div class="cart-summary__row">
+                    <span>Taxa de Entrega</span>
+                    <span id="cart-delivery-fee" class="shipping-fee-val">R$ 7,90</span>
+                </div>
+                <div class="cart-summary__row cart-summary__row--total">
+                    <span>Total</span>
+                    <span id="cart-total">R$ 0,00</span>
+                </div>
+            </div>
+
+            <button class="btn btn--primary btn--lg cart-checkout-btn" id="cart-checkout-btn">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Enviar Pedido pelo WhatsApp</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- ======================== PIZZA CUSTOMIZE MODAL ======================== -->
+    <div class="modal-backdrop" id="pizza-modal-backdrop" aria-hidden="true"></div>
+    <div class="pizza-modal" id="pizza-modal" role="dialog" aria-labelledby="modal-pizza-name" aria-hidden="true">
+        <button class="pizza-modal__close" id="pizza-modal-close" aria-label="Fechar janela">&times;</button>
+        <div class="pizza-modal__media">
+            <img src="" alt="" id="modal-pizza-img" class="pizza-modal__img">
+            <span class="pizza-modal__badge" id="modal-pizza-badge">Artesanal</span>
+        </div>
+        <div class="pizza-modal__content">
+            <div class="pizza-modal__header">
+                <h3 class="pizza-modal__title" id="modal-pizza-name">Nome da Pizza</h3>
+                <p class="pizza-modal__desc" id="modal-pizza-desc">Descrição detalhada dos ingredientes.</p>
+            </div>
+
+            <!-- Escolha o Tamanho -->
+            <div class="modal-section">
+                <h4 class="modal-section__title">1. Escolha o Tamanho</h4>
+                <div class="modal-options modal-options--sizes" id="modal-sizes">
+                    <label class="option-card">
+                        <input type="radio" name="pizza-size" value="Média (6 fatias)" data-price-modifier="-5.00">
+                        <div class="option-card__content">
+                            <span class="option-card__name">Média (6 fatias)</span>
+                            <span class="option-card__detail">30cm • 1 a 2 pessoas</span>
+                        </div>
+                        <span class="option-card__price">- R$ 5,00</span>
+                    </label>
+                    <label class="option-card option-card--selected">
+                        <input type="radio" name="pizza-size" value="Grande (8 fatias)" data-price-modifier="0" checked>
+                        <div class="option-card__content">
+                            <span class="option-card__name">Grande (8 fatias) <span class="badge-tag">Padrão</span></span>
+                            <span class="option-card__detail">35cm • 2 a 3 pessoas</span>
+                        </div>
+                        <span class="option-card__price">R$ 0,00</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="pizza-size" value="Família (12 fatias)" data-price-modifier="12.00">
+                        <div class="option-card__content">
+                            <span class="option-card__name">Família (12 fatias)</span>
+                            <span class="option-card__detail">40cm • 4 a 5 pessoas</span>
+                        </div>
+                        <span class="option-card__price">+ R$ 12,00</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Escolha a Borda Recheada -->
+            <div class="modal-section">
+                <h4 class="modal-section__title">2. Borda Recheada (Opcional)</h4>
+                <div class="modal-options modal-options--crusts" id="modal-crusts">
+                    <label class="option-card option-card--selected">
+                        <input type="radio" name="pizza-crust" value="Tradicional (Sem Borda)" data-price="0" checked>
+                        <div class="option-card__content">
+                            <span class="option-card__name">Massa Tradicional Crocante</span>
+                        </div>
+                        <span class="option-card__price">Grátis</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="pizza-crust" value="Borda Catupiry Original" data-price="8.00">
+                        <div class="option-card__content">
+                            <span class="option-card__name">Borda Catupiry Original</span>
+                        </div>
+                        <span class="option-card__price">+ R$ 8,00</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="pizza-crust" value="Borda Cheddar Cremoso" data-price="8.00">
+                        <div class="option-card__content">
+                            <span class="option-card__name">Borda Cheddar Cremoso</span>
+                        </div>
+                        <span class="option-card__price">+ R$ 8,00</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="pizza-crust" value="Borda Vulcão de Chocolate" data-price="10.00">
+                        <div class="option-card__content">
+                            <span class="option-card__name">Borda Vulcão de Chocolate</span>
+                        </div>
+                        <span class="option-card__price">+ R$ 10,00</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Observações -->
+            <div class="modal-section">
+                <h4 class="modal-section__title">3. Alguma observação?</h4>
+                <input type="text" class="modal-notes-input" id="modal-pizza-notes" placeholder="Ex: Sem cebola, bem dourada, pouco orégano...">
+            </div>
+
+            <!-- Footer com Qtd e Preço -->
+            <div class="pizza-modal__footer">
+                <div class="quantity-picker">
+                    <button type="button" class="quantity-btn" id="modal-qty-minus" aria-label="Diminuir quantidade">−</button>
+                    <span class="quantity-value" id="modal-qty-value">1</span>
+                    <button type="button" class="quantity-btn" id="modal-qty-plus" aria-label="Aumentar quantidade">+</button>
+                </div>
+                <button type="button" class="btn btn--primary pizza-modal__add-btn" id="modal-add-to-cart">
+                    <span>Adicionar ao Pedido</span>
+                    <span id="modal-total-price">R$ 42,90</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================== TOAST NOTIFICATIONS ======================== -->
+    <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
